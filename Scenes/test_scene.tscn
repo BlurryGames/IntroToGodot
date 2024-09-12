@@ -23,31 +23,31 @@ position = Vector2(83, 116)
 position = Vector2(557, 213)
 
 [node name="Coin" type="Sprite2D" parent="Node2D"]
-position = Vector2(-40, 0)
+position = Vector2(-15, 0)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_lnunv")
 
 [node name="Coin2" type="Sprite2D" parent="Node2D"]
-position = Vector2(40, 0)
+position = Vector2(15, 0)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_lnunv")
 
 [node name="Coin3" type="Sprite2D" parent="Node2D"]
-position = Vector2(0, 50)
-scale = Vector2(2, 2)
+position = Vector2(0, 25)
 texture = ExtResource("2_lnunv")
 
 [node name="Coin4" type="Sprite2D" parent="Node2D"]
-position = Vector2(0, -50)
-scale = Vector2(2, 2)
+position = Vector2(0, -25)
 texture = ExtResource("2_lnunv")
 
 [node name="Coin5" type="Sprite2D" parent="Node2D"]
-position = Vector2(-110, 0)
+position = Vector2(-60, 0)
 rotation = 0.785398
-scale = Vector2(2, 2)
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_lnunv")
 
 [node name="Coin6" type="Sprite2D" parent="Node2D"]
-position = Vector2(110, 0)
+position = Vector2(60, 0)
 rotation = 0.785398
-scale = Vector2(2, 2)
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_lnunv")
