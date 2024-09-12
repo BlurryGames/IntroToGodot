@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0aktub6xkvd"]
+
+[ext_resource type="Script" path="res://Scripts/CoinCollector/player.gd" id="1_aqk03"]
+[ext_resource type="Texture2D" uid="uid://c53upp0f2mg44" path="res://Sprites/Player.png" id="1_oc5nx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wv1t0"]
+size = Vector2(53, 66)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_aqk03")
+
+[node name="Player" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("1_oc5nx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-0.5, 15)
+shape = SubResource("RectangleShape2D_wv1t0")
