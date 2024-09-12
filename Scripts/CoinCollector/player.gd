@@ -1,6 +1,8 @@
 class_name Player extends CharacterBody2D
 
-func _physics_process(delta: float) -> void:
+var move_speed: float = 200.0
+
+func _physics_process(_delta: float) -> void:
 	set_velocity(Vector2.ZERO)
 	if Input.is_key_pressed(KEY_LEFT):
 		velocity.x -= 1
@@ -14,5 +16,5 @@ func _physics_process(delta: float) -> void:
 	if Input.is_key_pressed(KEY_DOWN):
 		velocity.y += 1
 	
-	velocity *= 50.0
+	velocity *= move_speed
 	move_and_slide()
