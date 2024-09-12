@@ -1,0 +1,1 @@
+class_name IntroToScripting extends Node2D
