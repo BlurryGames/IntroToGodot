@@ -1,12 +1,8 @@
 class_name IntroToScripting extends Node2D
 
 func _ready() -> void:
-	var result: int = _add(10, 25)
-	print(result)
+	var game_over: bool = _hast_won(120)
+	print(game_over)
 
-func _add(a: int, b: int) -> int:
-	var sum: int = a + b
-	return sum
-
-func _welcome_message() -> void:
-	print("The function was called!")
+func _hast_won(score: int) -> bool:
+	return score >= 100
