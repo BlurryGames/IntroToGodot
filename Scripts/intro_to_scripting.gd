@@ -1,15 +1,15 @@
 class_name IntroToScripting extends Node2D
 
-var ability: String = "slash"
+var country_name: String = "Australia"
 
-var move_speed: float = 2.53
+var highest_altitude: float = 2.228
 
-var score: int = 5
+var population: int = 25_000_000
 
-var game_over: bool = false
+var landlocked: bool = false
 
 func _ready() -> void:
-	game_over = true
-	print(game_over)
-	ability = "heal"
-	print(ability)
+	print(country_name)
+	print(population)
+	print(highest_altitude)
+	print(landlocked)
