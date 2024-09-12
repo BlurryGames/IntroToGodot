@@ -1,13 +1,9 @@
 class_name IntroToScripting extends Node2D
 
-var score: int = 75
+var game_over: bool = true
 
 func _ready() -> void:
-	if score > 80:
-		print("A")
-	elif score > 60:
-		print("B")
-	elif score > 30:
-		print("C")
+	if game_over:
+		print("Go to menu")
 	else:
-		print("D")
+		print("Keep playing")
