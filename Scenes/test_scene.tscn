@@ -1,53 +1,16 @@
 [gd_scene load_steps=3 format=3 uid="uid://dbhivpf7qawgx"]
 
-[ext_resource type="PackedScene" uid="uid://khvh1nrycjxc" path="res://Scenes/player.tscn" id="1_1xfo1"]
-[ext_resource type="Texture2D" uid="uid://bl783q2ymbymo" path="res://Sprites/Coin.png" id="2_lnunv"]
+[ext_resource type="Texture2D" uid="uid://c53upp0f2mg44" path="res://Sprites/Player.png" id="1_hikei"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nswrm"]
+size = Vector2(53, 66)
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource("1_1xfo1")]
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-50, 0)
+texture = ExtResource("1_hikei")
 
-[node name="Player2" parent="." instance=ExtResource("1_1xfo1")]
-position = Vector2(-122, -31)
-
-[node name="Player3" parent="." instance=ExtResource("1_1xfo1")]
-position = Vector2(-208, 94)
-
-[node name="Player4" parent="." instance=ExtResource("1_1xfo1")]
-position = Vector2(-88, 135)
-
-[node name="Player5" parent="." instance=ExtResource("1_1xfo1")]
-position = Vector2(83, 116)
-
-[node name="Node2D" type="Node2D" parent="."]
-position = Vector2(557, 213)
-
-[node name="Coin" type="Sprite2D" parent="Node2D"]
-position = Vector2(-15, 0)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_lnunv")
-
-[node name="Coin2" type="Sprite2D" parent="Node2D"]
-position = Vector2(15, 0)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("2_lnunv")
-
-[node name="Coin3" type="Sprite2D" parent="Node2D"]
-position = Vector2(0, 25)
-texture = ExtResource("2_lnunv")
-
-[node name="Coin4" type="Sprite2D" parent="Node2D"]
-position = Vector2(0, -25)
-texture = ExtResource("2_lnunv")
-
-[node name="Coin5" type="Sprite2D" parent="Node2D"]
-position = Vector2(-60, 0)
-rotation = 0.785398
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("2_lnunv")
-
-[node name="Coin6" type="Sprite2D" parent="Node2D"]
-position = Vector2(60, 0)
-rotation = 0.785398
-scale = Vector2(1.5, 1.5)
-texture = ExtResource("2_lnunv")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D"]
+position = Vector2(-0.5, 15)
+shape = SubResource("RectangleShape2D_nswrm")
