@@ -1,23 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://d1chm2sdt51n3"]
+[gd_scene load_steps=3 format=3 uid="uid://d1chm2sdt51n3"]
 
-[ext_resource type="Material" uid="uid://bapato3wxiin3" path="res://Materials/pink_ball.tres" id="1_67ln4"]
-[ext_resource type="Material" uid="uid://b567jin7ksqop" path="res://Materials/blue_transparent.tres" id="1_ep7jw"]
-[ext_resource type="Material" uid="uid://bn37r18f2fyhc" path="res://Materials/texture_ball.tres" id="3_i0mwo"]
+[sub_resource type="SphereMesh" id="SphereMesh_cpa1b"]
 
-[sub_resource type="SphereMesh" id="SphereMesh_0u7ot"]
+[sub_resource type="PlaneMesh" id="PlaneMesh_sqgh8"]
 
 [node name="Node3D" type="Node3D"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-material_override = ExtResource("1_ep7jw")
-mesh = SubResource("SphereMesh_0u7ot")
+mesh = SubResource("SphereMesh_cpa1b")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0)
-material_override = ExtResource("1_67ln4")
-mesh = SubResource("SphereMesh_0u7ot")
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, -0.5, 0)
+mesh = SubResource("PlaneMesh_sqgh8")
 
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0)
-material_override = ExtResource("3_i0mwo")
-mesh = SubResource("SphereMesh_0u7ot")
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3, 0)
+light_color = Color(0.2, 1, 0, 1)
+light_energy = 10.0
+shadow_enabled = true
