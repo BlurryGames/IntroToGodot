@@ -9,7 +9,7 @@ var score: int = 5
 var game_over: bool = false
 
 func _ready() -> void:
-	move_speed = 5.1
-	print(move_speed)
-	move_speed = 500.156
-	print(move_speed)
+	game_over = true
+	print(game_over)
+	ability = "heal"
+	print(ability)
