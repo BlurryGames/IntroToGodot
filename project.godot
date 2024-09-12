@@ -14,3 +14,9 @@ config/name="IntroToGodot"
 run/main_scene="res://test_scene.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[file_customization]
+
+folder_colors={
+"res://Sprites/": "pink"
+}
